@@ -12,5 +12,19 @@
     "resolveJsonModule": true
   },
   "include": ["src/**/*.ts", "database/**/*.ts"],
-  "exclude": ["dist", "node_modules"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/config.ts",
+    "src/types/receipt.ts",
+    "src/types/webhook.ts",
+    "src/utils/logger.ts",
+    "src/utils/errors.ts",
+    "src/utils/date.ts",
+    "src/utils/currency.ts",
+    "src/services/gemini.vision.ts",
+    "src/services/r2.ts",
+    "src/queue/jobs/deadline-alert.ts",
+    "src/skills/receipt-ingest/**/*"
+  ]
 }
